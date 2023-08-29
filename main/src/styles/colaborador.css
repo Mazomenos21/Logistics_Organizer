@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(84, 97, 255, 0.3);
+    margin: 0; /* Eliminar márgenes predeterminados del body */
+}
+
+.navbar_icon_customer {
+    width: 50px;
+    height: 50px;
+    margin: 10px; /* Simplificar los márgenes */
+}
+
+.container_navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos a lo largo del contenedor */
+    align-items: center;
+    padding: 10px; /* Agregar espaciado interno al contenedor */
+}
+
+.container_navbar > div {
+    flex: 1; /* Hacer que los elementos ocupen el mismo ancho dentro del contenedor */
+    padding: 10px; /* Agregar espaciado interno a los elementos */
+    text-align: center; /* Centrar el contenido dentro de cada elemento */
+}
+
+.container_navbar > div > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem; /* Usar tamaño de fuente relativo */
+    font-weight: bold;
+}
