@@ -5,27 +5,71 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/main/src/styles/colaborador.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Colaborador</title>
 </head>
-<body>
+<style>
+    .navbar_icon_customer {
+        width: 50px;
+        height: 50px;
+        margin: 10px; /* Simplificar los márgenes */
+    }
+
+    .container_navbar {
+        display: flex;
+        justify-content: space-between; /* Distribuir los elementos a lo largo del contenedor */
+        align-items: center;
+        padding: 10px; /* Agregar espaciado interno al contenedor */
+    }
+
+    .container_navbar > div {
+        flex: 1; /* Hacer que los elementos ocupen el mismo ancho dentro del contenedor */
+        padding: 10px; /* Agregar espaciado interno a los elementos */
+        text-align: center; /* Centrar el contenido dentro de cada elemento */
+    }
+
+    .container_navbar > div > a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem; /* Usar tamaño de fuente relativo */
+        font-weight: bold;
+    }
+</style>
+<body style="background-color: rgba(100, 240, 255, 0.3);
+    margin: 0; /* Eliminar márgenes predeterminados del body */">
 <div class="container">
     <div class="container_navbar">
-        <div class="navbar_icon_customer"><p>Icono persona</p></div>
-        <div class="navbar">buscar</div>
-        <div class="navbar_menu">menu navbar</div>
+        <div class="navbar_icon_customer">
+            <div style="margin-bottom: 0;background-color: rgba(100, 240, 255, 0.9); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <i class="bi-person-circle" style="font-size: 2rem; color: black;"></i>
+            </div>
+        </div>
+        <nav class="navbar bg-body-tertiary" style="margin-top: 20px">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button  type="submit" style="background-color: rgba(100, 240, 255, 0.9);border-radius: 50%;width: 50px; height: 50px;display: flex; align-items: center; justify-content: center;">
+                        <i class="bi-search" style="color: black;"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+        <div class="navbar_menu" style="margin-top: 20px;">
+            <div style="margin-bottom: 0;background-color: rgba(100, 240, 255, 0.9); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <i class="bi-list" style="font-size: 2rem; color: black;"></i>
+            </div>
+        </div>
     </div>
 </div>
-<div>
-    <div><p>numero de bodega</p></div>
-    <div>
-        <div><p>imagen del insumo</p></div>
-        <div><p>descripcion del insumo</p></div>
-    </div>
-</div>
+<div id="root"></div>
 <div><p>footer</p></div>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="module" src="./src/main.jsx"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </html>
