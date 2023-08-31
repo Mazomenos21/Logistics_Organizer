@@ -10,61 +10,87 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Colaborador</title>
 </head>
-<style>
-    .navbar_icon_customer {
-        width: 50px;
-        height: 50px;
-        margin: 10px; /* Simplificar los márgenes */
-    }
-
-    .container_navbar {
-        display: flex;
-        justify-content: space-between; /* Distribuir los elementos a lo largo del contenedor */
-        align-items: center;
-        padding: 10px; /* Agregar espaciado interno al contenedor */
-    }
-
-    .container_navbar > div {
-        flex: 1; /* Hacer que los elementos ocupen el mismo ancho dentro del contenedor */
-        padding: 10px; /* Agregar espaciado interno a los elementos */
-        text-align: center; /* Centrar el contenido dentro de cada elemento */
-    }
-
-    .container_navbar > div > a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.5rem; /* Usar tamaño de fuente relativo */
-        font-weight: bold;
-    }
-</style>
 <body style="background-color: rgba(100, 240, 255, 0.3);
     margin: 0; /* Eliminar márgenes predeterminados del body */">
-<div class="container">
-    <div class="container_navbar">
-        <div class="navbar_icon_customer">
-            <div style="margin-bottom: 0;background-color: rgba(100, 240, 255, 0.9); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
-                <i class="bi-person-circle" style="font-size: 2rem; color: black;"></i>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">Sound Logistic</a>
+
+        <div>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation"
+
+            >
+                <span class="bi bi-file-music-fill"></span>
+            </button>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation"
+
+            >
+                <span class="bi bi-person-fill"></span>
+            </button>
+
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation"
+
+            >
+                <span class="bi bi-bell-fill"></span>
+            </button>
+            <!--inicio Desplegable para notificaciones-->
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                 aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Notificaciones</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Casa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <nav class="navbar bg-body-tertiary" style="margin-top: 20px">
-            <div class="container-fluid">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button  type="submit" style="background-color: rgba(100, 240, 255, 0.9);border-radius: 50%;width: 50px; height: 50px;display: flex; align-items: center; justify-content: center;">
-                        <i class="bi-search" style="color: black;"></i>
-                    </button>
-                </form>
-            </div>
-        </nav>
-        <div class="navbar_menu" style="margin-top: 20px;">
-            <div style="margin-bottom: 0;background-color: rgba(100, 240, 255, 0.9); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
-                <i class="bi-list" style="font-size: 2rem; color: black;"></i>
-            </div>
+            <!--fin Desplegable para notificaciones-->
         </div>
     </div>
-</div>
-<div id="root"></div>
-<div><p>footer</p></div>
+</nav>
+
 
 </body>
 <script type="module" src="./src/main.jsx"></script>
