@@ -5,10 +5,10 @@ export const Home = ()=> {
     return(
         <>
             { <Estado
-         Nombre = "Carlos Andres Lopera Ramirez"
-         Identificacion = "100876498"
-         Cargo = "Administardor"
-        /> }
+                Nombre = "Carlos Andres Lopera Ramirez"
+                Identificacion = "100876498"
+                Cargo = "Administardor"
+            /> }
 
             { <Estado
                 Nombre = "Enrique Mosquera Gutierrez"

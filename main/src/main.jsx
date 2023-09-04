@@ -9,8 +9,7 @@ import CambiarDePestana from "./CambiarDePestana.jsx";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
-      <CambiarDePestana
-     />
+      <CambiarDePestana/>
 
     
   </React.StrictMode>,
