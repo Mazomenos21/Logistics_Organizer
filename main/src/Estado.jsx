@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import './styles/Personal.css';
-import imagen1 from './imagen1.jpg';
+import imagen1 from './img/imagen1.jpg';
 
 
 export const Estado = ({Nombre,Identificacion,Cargo}) =>{
