@@ -38,9 +38,11 @@ export const Estado = ({Nombre,Identificacion,Cargo}) =>{
                             <p>Identificación:{Identificacion} </p>
                             <p>Cargo: {Cargo}</p>
                             <h2>Estado:{estado}</h2>
+                            <div className="contenedor-del-boton">
                             <button className="verde" onClick={Activo}></button>
                             <button className="naranja" onClick={Espera}></button>
                             <button className="rojo" onClick={Inactivo}></button>
+                            </div>
                         </div>
                 </div>
             </div>
