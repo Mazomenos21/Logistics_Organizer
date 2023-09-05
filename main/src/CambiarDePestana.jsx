@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 //import Estado from './Estado';
 import App from './App';
-import Home from './Home';
+import Home from './components/Home';
 const CambioDePestana = () => {
     const [activeTab, setActiveTab] = useState('estado');
 

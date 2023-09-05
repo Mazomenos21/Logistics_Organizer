@@ -18,9 +18,10 @@ export const Home = ()=> {
 
             { <Estado
                 Nombre = "Mauricio Ochoa Gomez"
-                Identificacion = "100789389"
+                Identificacion="100789389}"
                 Cargo = "Transportador"
             /> }
+
         </>
     )
 }
