@@ -7,7 +7,7 @@ export const Home = ()=> {
             { <Estado
                 Nombre = "Carlos Andres Lopera Ramirez"
                 Identificacion = "100876498"
-                Cargo = "Administardor"
+                Cargo="Administrador"
             /> }
 
             { <Estado
@@ -18,7 +18,7 @@ export const Home = ()=> {
 
             { <Estado
                 Nombre = "Mauricio Ochoa Gomez"
-                Identificacion="100789389}"
+                Identificacion="100789389"
                 Cargo = "Transportador"
             /> }
 

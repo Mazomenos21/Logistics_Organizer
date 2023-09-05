@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import App from './App';
 import Home from './components/Home';
 import Inventary from './components/Inventary';
+import Mensaje from './components/Mensaje';
 const CambioDePestana = () => {
     const [activeTab, setActiveTab] = useState('estado');
 
@@ -13,10 +14,11 @@ const CambioDePestana = () => {
         <div>
             <div>
                 <button onClick={() => handleTabChange('estado')}>Estado</button>
-                <button onClick={() => handleTabChange('inventary')}>App</button>
+                <button onClick={() => handleTabChange('inventary')}>Inventario</button>
+                <button onClick={() => handleTabChange('mensaje')}>Notificaciones</button>
             </div>
             <div>
-                {activeTab === 'estado' ? <Home/> : <Inventary/>}
+                {activeTab === 'estado' ? <Home/> : (activeTab === 'inventary' ? <Inventary/> : <Mensaje/>)}
             </div>
         </div>
     );
