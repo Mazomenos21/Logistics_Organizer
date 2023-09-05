@@ -1,9 +1,9 @@
-/*
-import './styles/App.css';
-import {Instruments} from './Instruments'; // Asegúrate de tener la ruta correcta
+import React from 'react';
+import '../styles/App.css';
+import {Instruments} from '../DB/Instruments'; // Asegúrate de tener la ruta correcta
 import {useState} from 'react';
 
-function App() {
+function Inventary() {
     const [stock, setStock] = useState(Instruments().map(instrument => ({...instrument})));
     const [totalGanancias, setTotalGanancias] = useState(0);
     const [message, setMessage] = useState('');
@@ -55,4 +55,4 @@ function App() {
     );
 }
 
-export default App;*/
+export default Inventary;
